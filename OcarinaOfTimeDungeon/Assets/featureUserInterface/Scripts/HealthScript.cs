@@ -6,8 +6,8 @@ public class HealthScript : MonoBehaviour {
     [SerializeField] private int health = 11;
     [SerializeField] private int currentHealth = 11;
 
-    [SerializeField] private Sprite[] hearts;
-    [SerializeField] private Image fullhearts;
+    public Sprite[] hearts;
+    public Image fullhearts;
 
     private void Start()
     {

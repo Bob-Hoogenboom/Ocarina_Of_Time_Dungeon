@@ -8,6 +8,11 @@ public class RupeeCounter : MonoBehaviour
     [SerializeField] private Text text;
     [SerializeField] private int rupees = 4;
 
+    private void Start()
+    {
+        text.text = "0" + rupees.ToString();
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
