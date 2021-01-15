@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class RupeeCounter : MonoBehaviour
 {
-    [SerializeField] private Text text;
+    public Text text;
     [SerializeField] private int rupees = 4;
 
     private void Start()
