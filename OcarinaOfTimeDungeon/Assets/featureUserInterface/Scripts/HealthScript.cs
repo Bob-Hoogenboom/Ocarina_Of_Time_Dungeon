@@ -2,7 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class HealthScript : MonoBehaviour {
+public class HealthScript : MonoBehaviour 
+{
     [SerializeField] private int health = 11;
     [SerializeField] private int currentHealth = 11;
 
@@ -37,7 +38,7 @@ public class HealthScript : MonoBehaviour {
         }
     }
 
-    private void DamageHearts(int dmg)
+    public void DamageHearts(int dmg)
     {
         //give dmg int for double damage or falldamage?
         if (currentHealth >= 0 )
@@ -47,7 +48,7 @@ public class HealthScript : MonoBehaviour {
         }
     }
 
-    private void HealHearts(int heal)
+    public void HealHearts(int heal)
     {
         if(currentHealth < 11)
         {

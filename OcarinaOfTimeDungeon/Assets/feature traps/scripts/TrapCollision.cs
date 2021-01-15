@@ -18,6 +18,7 @@ public class TrapCollision : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+
             Debug.Log("event dmg function");
             takeKB.Invoke(); //assign the knockback function
         }
