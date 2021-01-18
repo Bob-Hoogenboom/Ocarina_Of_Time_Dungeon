@@ -6,8 +6,8 @@ using UnityEngine.Events;
 public class Knockback : MonoBehaviour
 {
     [SerializeField] private float force = 20.0f;
-    [SerializeField] private float mass = 3.0f; // defines the character mass
     private Vector3 impact = Vector3.zero;
+    private bool waited = true;
 
     public UnityEvent takeDMG;
     public CharacterController character;
@@ -17,7 +17,7 @@ public class Knockback : MonoBehaviour
     {
         dir.Normalize();
         if (dir.y < 0) dir.y = -dir.y; // reflect down force on the ground
-        impact += dir.normalized * force / mass;
+        impact += dir.normalized * force;
         takeDMG.Invoke();
     }
 
@@ -26,19 +26,31 @@ public class Knockback : MonoBehaviour
         if (impact.magnitude > 0.2) character.Move(impact * Time.deltaTime);
         impact = Vector3.Lerp(impact, Vector3.zero, 5 * Time.deltaTime);
 
-        if(Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.T))
         {
             Debug.Log("addimpact");
             AddImpact(transform.position, force);
-        }  
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Trap"))
-        {
-            Debug.Log("werk?");
-            AddImpact(transform.position, force);
         }
     }
+
+    public void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.CompareTag("Trap"))
+        {
+            if (waited == true)
+            {
+                AddImpact(transform.position, force);
+                waited = false;
+                StartCoroutine(Wait());
+            }
+
+        }
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(2);
+        waited = true;
+    }
 }
+
