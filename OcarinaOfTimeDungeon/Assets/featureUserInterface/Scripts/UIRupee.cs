@@ -10,19 +10,19 @@ public class RupeeCounter : MonoBehaviour
 
     private void Start()
     {
-        text.text = "0" + rupees.ToString();
+        UpdateRupeeUI();
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            AddRupee(1);
+            RemoveRupee(1);
         }
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            RemoveRupee(1);
+            AddRupee(1);
         }
     }
 
@@ -31,7 +31,7 @@ public class RupeeCounter : MonoBehaviour
         if (rupees <= 98)
         {
             rupees = rupees + rupeeAmount;
-            text.text = "0" + rupees.ToString();
+            UpdateRupeeUI();
         }
     }
 
@@ -40,7 +40,12 @@ public class RupeeCounter : MonoBehaviour
         if(rupees > 0)
         {
             rupees = rupees - rupeeAmount;
-            text.text = "0" + rupees.ToString();
+            UpdateRupeeUI();
         }
+    }
+
+    private void UpdateRupeeUI()
+    {
+        text.text = "0" + rupees.ToString();
     }
 }
