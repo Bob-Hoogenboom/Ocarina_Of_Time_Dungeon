@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class HealthScript : MonoBehaviour 
+public class UIHealth : MonoBehaviour 
 {
     [SerializeField] private int health = 11;
     [SerializeField] private int currentHealth = 11;
