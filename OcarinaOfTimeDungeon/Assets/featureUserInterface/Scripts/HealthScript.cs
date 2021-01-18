@@ -52,8 +52,14 @@ public class HealthScript : MonoBehaviour
     {
         if(currentHealth < 11)
         {
+            //DamageHearts(-heal)
             currentHealth = currentHealth + heal;
             fullhearts.sprite = hearts[currentHealth+1];
         }
+    }
+
+    private void UpdateUI()
+    {
+        fullhearts.sprite = hearts[currentHealth + 1];
     }
 }

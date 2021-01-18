@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class knockBackScript : MonoBehaviour
+public class Knockback : MonoBehaviour
 {
+    [SerializeField] private float force = 20.0f;
     [SerializeField] private float mass = 3.0f; // defines the character mass
     private Vector3 impact = Vector3.zero;
 
@@ -22,9 +23,22 @@ public class knockBackScript : MonoBehaviour
 
     public void Update()
     {
-        // apply the impact force:
         if (impact.magnitude > 0.2) character.Move(impact * Time.deltaTime);
-        // consumes the impact energy each cycle:
         impact = Vector3.Lerp(impact, Vector3.zero, 5 * Time.deltaTime);
+
+        if(Input.GetKeyDown(KeyCode.T))
+        {
+            Debug.Log("addimpact");
+            AddImpact(transform.position, force);
+        }  
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Trap"))
+        {
+            Debug.Log("werk?");
+            AddImpact(transform.position, force);
+        }
     }
 }
