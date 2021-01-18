@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class RupeeCounter : MonoBehaviour
+public class UIRupee : MonoBehaviour
 {
     public Text text;
     [SerializeField] private int rupees = 4;
