@@ -197,8 +197,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251211408}
-  m_LocalRotation: {x: -0.28208145, y: -0.21944451, z: 0.06636573, w: -0.9315953}
-  m_LocalPosition: {x: -5.966593, y: 17.97157, z: -11.677063}
+  m_LocalRotation: {x: -0.20791596, y: -0.23735319, z: 0.05201563, w: -0.94748557}
+  m_LocalPosition: {x: -7.3092594, y: 15.716204, z: -11.348362}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -279,18 +279,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2bc12f15d665884c97957018d77bdbb, type: 3}
---- !u!114 &1876461347 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4919796411036888745, guid: 9ec06f7c4bfb0854588845b605af37ca,
-    type: 3}
-  m_PrefabInstance: {fileID: 7481943170352171335}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f3e0985475168844a34c00a0770830a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &317999201728589705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -472,15 +460,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -179.949
       objectReference: {fileID: 0}
-    - target: {fileID: 5861442798100136266, guid: ff2773976f2b63e44aec62db827120b4,
-        type: 3}
-      propertyPath: waterDown.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1876461347}
     - target: {fileID: 9058842093004911600, guid: ff2773976f2b63e44aec62db827120b4,
         type: 3}
       propertyPath: m_Name
       value: waterswitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058842093004911600, guid: ff2773976f2b63e44aec62db827120b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff2773976f2b63e44aec62db827120b4, type: 3}

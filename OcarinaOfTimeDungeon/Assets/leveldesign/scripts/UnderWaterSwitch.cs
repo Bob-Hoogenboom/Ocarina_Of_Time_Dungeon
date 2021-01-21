@@ -4,36 +4,17 @@ using UnityEngine;
 
 public class UnderWaterSwitch : MonoBehaviour
 {
-    [SerializeField] private float _moveToLocationY;
+    [SerializeField] private float _moveToLocationY = 1;
     private Vector3 waterlow;
-    [SerializeField] private float speed;
-    //[SerializeField] private GameObject waterSwitch;
-
-    bool isPushed = false;
+    [SerializeField] private float speed = 1;
 
     void Start()
     {
         waterlow = new Vector3(transform.position.x, _moveToLocationY, transform.position.z);
     }
 
-    //void Update()
-    //{
-    //    OnTriggerEnter(waterSwitch.GetComponent<MeshCollider>());
-    //}
-
     public void MoveWaterDown()
     {
         transform.position = Vector3.MoveTowards(transform.position, waterlow, Time.deltaTime * speed);
     }
-
-    //void OnTriggerEnter(Collider col)
-    //{
-    //    Debug.Log(col);
-    //    //if (!isPushed)
-    //    //{
-    //    //    isPushed = true;
-            
-    //    //}
-    //    gameObject.transform.position = Vector3.MoveTowards(transform.position, waterlow, Time.deltaTime * speed);
-    //}
 }

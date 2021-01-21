@@ -6,14 +6,16 @@ using UnityEngine.Events;
 public class SwitchCollision : MonoBehaviour
 {
     public UnityEvent waterDown;
+    public CharacterController character;
 
-    private void OnCollisionEnter(Collision collision)
+    public void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (hit.gameObject.CompareTag("UnderWaterSwitch"))
         {
-
-            Debug.Log("event dmg function");
-            waterDown.Invoke(); //assign the waterdown function
+            for (int i = 0; i < 3; i++)
+            {
+                waterDown.Invoke();
+            }
         }
     }
 }
