@@ -52,6 +52,7 @@ public class UIHealth : MonoBehaviour
     {
         if(currentHealth < 11)
         {
+            //DamageHearts(-heal)
             currentHealth = currentHealth + heal;
             UpdateUI();
         }

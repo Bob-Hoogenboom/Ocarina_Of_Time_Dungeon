@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6518248957008068128
+--- !u!1 &1885921903229904954
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6518248957008068130}
-  - component: {fileID: 6518248957008068131}
-  - component: {fileID: 6518248957008068133}
+  - component: {fileID: 1885921903229904952}
+  - component: {fileID: 1885921903229904953}
+  - component: {fileID: 1885921903229904959}
   m_Layer: 0
-  m_Name: UIGameManger
+  m_Name: UIGameManger 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6518248957008068130
+--- !u!4 &1885921903229904952
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6518248957008068128}
+  m_GameObject: {fileID: 1885921903229904954}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 301.21793, y: 97.23396, z: -115.33371}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,13 +32,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6518248957008068131
+--- !u!114 &1885921903229904953
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6518248957008068128}
+  m_GameObject: {fileID: 1885921903229904954}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 959427b9286548f4090eab9f9953de7c, type: 3}
@@ -46,28 +46,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 11
   currentHealth: 11
-  hearts:
-  - {fileID: 21300000, guid: f0ef5d51809d10e488a2f6eb28c08c3a, type: 3}
-  - {fileID: 21300000, guid: e6d8f4c9e52cc61438952e01464e07fd, type: 3}
-  - {fileID: 21300000, guid: df22a33ece4f2634bb141979257c7e8a, type: 3}
-  - {fileID: 21300000, guid: b70630be7e5405c4b9938af50df575ad, type: 3}
-  - {fileID: 21300000, guid: df22a33ece4f2634bb141979257c7e8a, type: 3}
-  - {fileID: 21300000, guid: 4c0b31c91b786714398b0ad7f028721e, type: 3}
-  - {fileID: 21300000, guid: aab52e9576d54fd4bbbefa5a4c429d4f, type: 3}
-  - {fileID: 21300000, guid: 674cc10965406e44ea718ade0eb5bd78, type: 3}
-  - {fileID: 21300000, guid: 6717cb78714ea3240ac2cc4c675e9127, type: 3}
-  - {fileID: 21300000, guid: 859b08eb93f9c4c499f1b50e0b8f8466, type: 3}
-  - {fileID: 21300000, guid: 0ead263e8e9187c47b75094bd356fdba, type: 3}
-  - {fileID: 21300000, guid: 6461b0cd79427cc4eacecc0f7bf405e0, type: 3}
-  - {fileID: 21300000, guid: bba474a2acd0c1c4fa504731a7f3c6be, type: 3}
+  hearts: []
   fullhearts: {fileID: 0}
---- !u!114 &6518248957008068133
+--- !u!114 &1885921903229904959
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6518248957008068128}
+  m_GameObject: {fileID: 1885921903229904954}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b436d56997253df4eabb3b3d0aa051e4, type: 3}
