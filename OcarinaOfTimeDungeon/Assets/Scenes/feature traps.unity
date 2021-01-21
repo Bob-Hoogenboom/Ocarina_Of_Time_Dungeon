@@ -678,6 +678,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4740817797931071261, guid: 94bd73efedb34c3439a6d95197efc6a3,
+        type: 3}
+      propertyPath: force
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8930977601209041459, guid: 94bd73efedb34c3439a6d95197efc6a3,
         type: 3}
       propertyPath: m_ReceiveShadows
