@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Trap
   - UnderWaterSwitch
+  - Water
   layers:
   - Default
   - TransparentFX
