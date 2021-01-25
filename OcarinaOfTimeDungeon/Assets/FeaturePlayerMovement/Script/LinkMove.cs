@@ -29,7 +29,7 @@ public class LinkMove : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
-        Vector3 direction = new Vector3(horizontal, 0f, vertical);
+        Vector3 direction = new Vector3(-horizontal, 0f, -vertical);
 
         _groundedPlayer = charCon.isGrounded;
         if (_groundedPlayer && _playerVelocity.y < 0)
