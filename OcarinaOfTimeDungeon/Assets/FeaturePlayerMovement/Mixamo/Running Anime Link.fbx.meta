@@ -1,34 +1,12 @@
 fileFormatVersion: 2
-guid: bf57b4691c0904c4f95349e494344ea4
+guid: 90a27f1ef35fc234d8170a4906b6ac62
 ModelImporter:
   serializedVersion: 19300
-  internalIDToNameTable: []
-  externalObjects:
+  internalIDToNameTable:
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mtl_04001A40
-    second: {fileID: 2100000, guid: ea8449d727245064ba56da5f964ad4cf, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mtl_04001C40
-    second: {fileID: 2100000, guid: 2b49d7ff4dd0bdb478ca5bc37cf74c66, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mtl_04001D40
-    second: {fileID: 2100000, guid: 70edd593e3d203a4cb6245244b2bf642, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mtl_04001F40
-    second: {fileID: 2100000, guid: 9ede31536facc6d4e86a3ccb593ab559, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mtl_06006400
-    second: {fileID: 2100000, guid: ad3b47edb65500e42b3864d95810f86f, type: 2}
+      74: -203655887218126122
+    second: mixamo.com
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -66,7 +44,7 @@ ModelImporter:
     sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
+    importCameras: 0
     importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
