@@ -7,8 +7,8 @@ using UnityEngine;
 public class LinkMove : MonoBehaviour
 {
     [SerializeField] private Vector3 _playerVelocity;
-    [SerializeField] private bool _groundedPlayer;
-    [SerializeField] private float _speed = 6f;
+    [SerializeField] public bool _groundedPlayer;
+    [SerializeField] public float _speed = 6f;
     [SerializeField] private float _turnTime = 0.1f;
     [SerializeField] private float _jumpHeight = 1.0f;
     [SerializeField] private float _gravityScale = -9.81f;
