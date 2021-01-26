@@ -12,11 +12,12 @@ public class LinkMove : MonoBehaviour
     [SerializeField] private float _turnTime = 0.1f;
     [SerializeField] private float _jumpHeight = 1.0f;
     [SerializeField] private float _gravityScale = -9.81f;
-    [SerializeField] private Animator anime;
 
     private CharacterController charCon;
     private float _gravityValue = -3.0f;
     private float _smoothTurn;
+
+    public Animator anime;
 
     void Start()
     {
