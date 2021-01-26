@@ -30,6 +30,8 @@ GameObject:
   - component: {fileID: 4366407087318751689}
   - component: {fileID: 5916875437679236981}
   - component: {fileID: 3276400325589312501}
+  - component: {fileID: 336239462}
+  - component: {fileID: 336239463}
   m_Layer: 0
   m_Name: PlayerObject
   m_TagString: Untagged
@@ -88,6 +90,62 @@ MonoBehaviour:
   _turnTime: 0.15
   _jumpHeight: 2.5
   _gravityScale: -15
+  anime: {fileID: 1248663165}
+--- !u!114 &336239462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7251384437722641215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50126d05639a3349af321439973b95d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 20
+  takeDMG:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  character: {fileID: 5916875437679236981}
+--- !u!114 &336239463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7251384437722641215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b22dbe192d2f5a4cb0d9dd02720e197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterDown:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  character: {fileID: 5916875437679236981}
 --- !u!1001 &2388186321926311770
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -230,6 +288,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Deku Shield (Hi-Poly)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2187996105733658575, guid: e69f7ce74045493438f8b811623eafb5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2884004729420490204, guid: e69f7ce74045493438f8b811623eafb5,
         type: 3}
